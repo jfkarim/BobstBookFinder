@@ -9,7 +9,9 @@ contents = File.read("public/bobst_data.txt")
 lines = contents.split("\n")
 
 lines.each do |line| 
-  fields = line.split(",")
+  fields = line.split(", ")
+  fields[4][0] = ""
+  
   Book.create(
               college_name: fields[0],
               dept_name: fields[1],
@@ -20,3 +22,29 @@ lines.each do |line|
               )
 end
 
+for i in 1..10
+  Floor.create(floor_number: i)
+end
+
+sections = []
+
+for i in ('A'..'Z').to_a
+  for j in ('A'..'Z').to_a
+    call = i + j
+    sections << call
+  end
+end
+
+sections.each_with_index do |section, index|
+  if index <= sections.index("DJ")
+    Section.create(name: section, floor_id: 4)
+  elsif index < sections.index("DJ") && index <= sections.index("EZ")
+    Section.create(name: section, floor_id: 6)
+  elsif index < sections.index("EZ") && index <= sections.index("LZ")
+    Section.create(name: section, floor_id: 7)
+  elsif index < sections.index("LZ") && index <= sections.index("PZ")
+    Section.create(name: section, floor_id: 8)
+  elsif index < sections.index("DJ") && index <= sections.index("ZZ")
+    Section.create(name: section, floor_id: 9)
+  end
+end

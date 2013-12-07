@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131207021256) do
+ActiveRecord::Schema.define(:version => 20131207031756) do
 
   create_table "books", :force => true do |t|
     t.string   "college_name"
@@ -30,5 +30,23 @@ ActiveRecord::Schema.define(:version => 20131207021256) do
   add_index "books", ["college_name"], :name => "index_books_on_college_name"
   add_index "books", ["dept_name"], :name => "index_books_on_dept_name"
   add_index "books", ["major"], :name => "index_books_on_major"
+
+  create_table "floors", :force => true do |t|
+    t.integer  "floor_number"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "floors", ["floor_number"], :name => "index_floors_on_floor_number"
+
+  create_table "sections", :force => true do |t|
+    t.integer  "floor_id"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "sections", ["floor_id"], :name => "index_sections_on_floor_id"
+  add_index "sections", ["name"], :name => "index_sections_on_name"
 
 end
