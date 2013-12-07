@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Book Finder</title>
+  <%= stylesheet_link_tag    "foundation"%>
+  <%= stylesheet_link_tag    "bookIt"%>
+  <%= javascript_include_tag "jquery1" %>
+
+    <script>
+
+	  	function FirstFloor () {
+			window.location.replace('1.html');
+	  	}
+	  	function SecondFloor () {
+			window.location.replace('2.html');
+	  	}
+	  	function ThirdFloor () {
+			window.location.replace('3.html');
+	  	}
+	  	function FourthFloor () {
+			window.location.replace('4.html');
+	  	}
+	  	function FifthFloor () {
+			window.location.replace('5.html');
+	  	}
+	  	function SixthFloor () {
+			window.location.replace('6.html');
+	  	}
+	  	function SeventhFloor () {
+			window.location.replace('7.html');
+	  	}
+	  	function EigthFloor () {
+			window.location.replace('8.html');
+	  	}
+	  	function NinthFloor () {
+			window.location.replace('9.html');
+	  	}
+
+  </script>	
+  
+  <script>
+  
+  $(document).ready( function() {
+    $("#load_table").on("click", function() { 
+    	alert('tester');
+        $("#table_loader").load("table_test2.html");
+    });
+});
+  </script>
+
+</head>
+<body>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="nyu-logo-img">
+				<%= image_tag "NYU_logo.png"%>
+			</div>
+			<h2 >NYU Bookfind</h2>
+			<p>This is version .1</p>
+			
+			<hr />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-8 columns">
+			<h3>First Floor</h3>
+
+			<!-- Grid Example -->
+			<div class="row">
+				<div class="large-12 columns">
+					<div class="panel" id="table_loader">
+						<table>
+						<tr style="height:25%;">
+							<td id="grid1" id="floor1a" >
+								
+							</td>
+							
+<!-- Reference Center -->
+							
+							<td id="grid1" style="width:60%; padding-top:24px;font-size:24px;">
+								<div id="reference">
+									Reference Center
+								</div>
+							</td>
+							<td id="grid1" id="floor1a" >
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td id="grid1" id="floor1b" style="">
+								&nbsp;
+							</td>
+							<td id="grid1" style="width:60%;border:none;">
+								<div style="width:100%;text-align:center;margin:auto;margin-top:-4%;">
+									First Floor
+								</div>
+								<div id="stairs_right">
+									<%= image_tag "stairs_right.png" %>
+								</div>
+								
+								<div id="elevators">
+									<img style="margin-left:-52%;" src="images/elevator.png" width="6%" />
+									
+									<img style="margin-left:20%;" src="images/elevator.png" width="6%" />
+								</div>
+								
+								<div id="stairs_left">
+									<%= image_tag "stairs_left.png" %>
+								</div>
+							</td>
+							<td id="grid1"  style="width:20%; padding-top:48px;padding-left:24px;padding-right:24px;">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td id="grid1" id="floor1a">
+								&nbsp;
+							</td>
+							<td id="grid1" style="text-align:center;font-size:24px;width:60%;border:none;">
+								Atrium
+								<div "circ_services" >
+									Circulation Services
+								</div>
+							</td>
+							<td id="grid1"  id="floor1a">
+								<div "gallery" >
+									Bobst Gallery
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td id="grid1"  id="floor1aa" >
+								<div style="text-align:center;height:72%;margin-top:-50%;">
+									&nbsp;
+								</div>
+
+								
+							</td>
+							<td id="grid1" style="width:60%;height:fixed;">
+								
+								<div style="width:100%;margin-top:-12%;">
+									<div id="stair_right2" style="">
+									<img style="margin-left:-50%;" src="images/stairs_right.png" width="25%" />
+									</div>
+									
+									<div id="stair_left2" style="">
+									<img style="margin-left:50%;" src="images/stairs_left.png" width="25%" />
+									</div>
+									
+								</div>
+							</td>
+							<td id="grid1"  id="floor1aa" >
+								<div style="text-align:center; height:72%;margin-top:-50%;">	
+									&nbsp;													
+								</div>
+
+							</td>
+						</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="large-4 columns">
+			<h4>This is NYU Bookfind</h4>
+			<p>Search your book below</p>
+
+			<h4>Search</h4>
+			<p>Search by Author, Title, Call#</p>
+			
+			<h4>Bobst Libary</h4>
+
+			<p id="floorLevel"><a href="#" onclick="FirstFloor();" >First Floor</a></p>
+			<p id="floorLevel"><a href="#" onclick="SecondFloor();" >Second Floor</a></p>
+			<p id="floorLevel"><a href="#" onclick="ThirdFloor();" >Third Floor</a></p>
+			<p id="floorLevel"><a href="#" onclick="FourthFloor();" >Fourth Floor</a></p>
+			<p id="floorLevel"><a href="#" onclick="FifthFloor();" >Fifth Floor</a></p>
+			<p id="floorLevel"><a href="#" onclick="SixthFloor();" >Sixth Floor</a></p>
+			<p id="floorLevel"><a href="#" onclick="SeventhFloor();" >Seventh Floor</a></p>
+			<p id="floorLevel"><a href="#" onclick="EigthFloor();" >Eigth Floor</a></p>
+			<p id="floorLevel"><a href="#" onclick="NinthFloor();" >Ninth Floor</a></p>
+			<p id="floorLevel"><a href="#" id="load_table" >Test Floor</a></p>
+
+		</div>
+
+	</div>
+	
+
+
+</body>
+</html>

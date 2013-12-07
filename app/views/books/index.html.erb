@@ -1,0 +1,37 @@
+<h1 class="pick-head">Pick your fucking book</h1>
+<ul class="book-list">
+<% @search_results.each do |book| %>
+	<li class="book-li"><a href="<%= book_url(book) %>" class="book-a">Title: <%= book.bib_title %> <br> By: <%= book.bib_author %></a></li>
+<% end %>
+</ul>
+
+<style>
+
+body {
+	background: #333;
+}
+
+.pick-head {
+	margin: 100px auto 20px auto;
+	font-family: 'Lato';
+	font-weight: bold;
+	color: #47008C;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.book-li {
+	margin: 5px;
+}
+.book-a {
+	text-decoration: none;
+	background: #eee;
+	width: 700px;
+	font-family: 'Lato';
+	font-size: 18px;
+}
+
+.book-a:hover {
+	color: #eee;
+	background: #47008C;
+}
+
+</style>

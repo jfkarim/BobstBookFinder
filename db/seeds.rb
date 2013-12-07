@@ -29,6 +29,7 @@ end
 sections = []
 
 for i in ('A'..'Z').to_a
+  sections << i
   for j in ('A'..'Z').to_a
     call = i + j
     sections << call

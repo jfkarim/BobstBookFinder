@@ -1,0 +1,58 @@
+<h1 class="fucking-bobst">Find My Fucking Book, Bobst!</h1>
+
+<div class="book-search">
+	<form action="<%= books_url %>" method="GET">
+	  <input class="book-search-bar" type="text" name="search_title" placeholder="Give me a fucking book title"><br>
+		<input type="submit" value="Search" class="search-submit">
+	</form>
+</div>
+
+<style>
+
+body {
+	background: #333;
+}
+
+.fucking-bobst {
+	margin: 100px auto 20px auto;
+	font-family: 'Lato';
+	font-weight: bold;
+	text-align: center;
+	color: #47008C;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	font-size: 45px;
+}
+
+.book-search {
+	text-align: center;
+	margin: 20px auto;
+	font-family: 'Lato';
+}
+
+.book-search-bar {
+	width: 600px;
+	height: 20px;
+	font-size: 18px;
+	padding: 5px;
+	color: #eee;
+	background: #47008C;
+	border: 2px solid #eee;
+	border-radius: 3px;
+}
+
+.search-submit {
+	margin-top: 10px;
+	padding: 5px 30px;
+	font-size: 18px;
+	background: #47008C;
+	color: #eee;
+	border: 2px solid #eee;
+	border-radius: 3px;
+}
+
+.search-submit:hover {
+	color: #47008C;
+	background: #eee;
+	border-color: #47008C;
+}
+</style>

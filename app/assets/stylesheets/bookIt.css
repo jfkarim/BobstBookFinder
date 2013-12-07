@@ -1,0 +1,93 @@
+#table_loader{
+	background:#ffffff;width:600px;height:600px;
+}
+table{
+	width:100%;height:100%;
+}
+
+#floorLevel{
+	padding:0;margin:0;
+}
+#floor_number{
+	width:100%;text-align:center;margin:auto;margin-top:-4%;
+}
+#floor1a{
+	width:20%; padding-left:24px;padding-top:24px;
+}
+#floor1aa{
+	width:20%; padding-left:24px;padding-top:24px;padding-bottom:24px;
+}
+#floor1b{
+	width:20%; padding-top:48px;padding-left:24px;padding-right:24px;
+}
+#stairs_right{
+	width:40%;float:left;margin-top:-13%;
+}
+#stairs_left{
+	width:40%;margin-left:60%;float:left;margin-top:-13%;
+}
+#stair_left2{
+	width:40%;margin-left:20%;float:left;
+}
+#stair_right2{
+	width:40%;float:left;
+}
+#elevators{
+	width:100%;position:absolute;text-align:center;margin-top:-8%;
+}
+
+.north_reading{
+	position:absolute;border:1px solid #000;font-size:18px;margin-top:20px;height:26px;padding:2px;width:49%;background:grey;
+}
+
+/**INIT GRID**/
+#grid1{
+	text-align:center;
+}
+table tr td{
+	margin:0;padding:0;padding-top:0;border:0;border:1px #000 solid;
+}
+#section{
+	background:purple;
+}
+#sectionMusic{
+	background:purple;
+}
+#sectionNews{
+	background:purple;
+}
+#ADJOVERSIZE{
+	background:purple;	
+}
+
+#section:hover{
+	background:orange;
+}
+
+
+/***** Styling IDs ****/
+
+#reference{
+	background:grey;width:220px;height:auto;text-align:center;margin:auto;padding:20px;
+}
+#circ_services{
+	background:grey;width:100px;height:auto;text-align:left;margin:auto;padding:20px;margin-left:-40px;font-size:12px;
+}
+#gallery{
+	text-align:center;height:100%;font-size:22px;padding-top:24px;line-height:1.2
+}
+
+.nyu-logo-img > img {
+	width: 40%;
+}
+
+#stairs_right > img {
+	width: 25%;
+	margin-left: -50%;
+}
+
+#stairs_left > img {
+	width: 25%;
+	margin-left: 50%;
+}
+
