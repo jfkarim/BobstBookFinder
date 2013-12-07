@@ -3,4 +3,5 @@ class Book < ActiveRecord::Base
                   :bib_author, :bib_title, :call_number_major
                   
   validates :bib_title, presence: true
+  validates :bib_title, uniqueness: true
 end

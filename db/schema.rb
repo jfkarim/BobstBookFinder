@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20131207031756) do
     t.string   "dept_name"
     t.string   "major"
     t.string   "bib_author"
-    t.string   "bib_title"
+    t.text     "bib_title"
     t.string   "call_number_major"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false

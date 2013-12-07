@@ -5,7 +5,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :dept_name
       t.string :major #of person who checked book out
       t.string :bib_author
-      t.string :bib_title
+      t.text :bib_title
       t.string :call_number_major #location of book (beginning of call number)
 
       #fields in data-file COLLEGE_NAME, DEPT_NAME, MAJOR (OF PERSON CHECKED), BIB_AUTHOR, BIB_TITLE, CALL_NUMBER_MAJOR
